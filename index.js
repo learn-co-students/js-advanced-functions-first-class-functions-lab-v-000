@@ -1,3 +1,6 @@
+<<<<<<< HEAD
 let mostProfitableNeighborhood = 'Chelsea'
 const companyName = 'Scuber'
 let companyCeo = 'Susan Smith'
+=======
+>>>>>>> master
