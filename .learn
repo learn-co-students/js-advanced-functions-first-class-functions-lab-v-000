@@ -2,9 +2,11 @@ tags:
   - learn.co
   - flatiron school
   - javascript
-  - strings
+  - first-class
+  - functions
+  - functional programming
   - code-along
 languages:
   - javascript
 resources:
-  - 9
+  - 3
