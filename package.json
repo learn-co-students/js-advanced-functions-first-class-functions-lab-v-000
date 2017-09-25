@@ -7,6 +7,10 @@
     "type": "git",
     "url": "git+ssh://git@github.com/learn-co-curriculum/js-advanced-functions-first-class-functions-lab.git"
   },
+  "scripts": {
+   "postinstall": "gem install learn-co",
+   "test": "node_modules/browser-sync/bin/browser-sync.js start --config node_modules/learn-browser/bs-config.js"
+ },
   "keywords": [
     "learn",
     "flatiron school",
@@ -23,6 +27,6 @@
   },
   "homepage": "https://github.com/learn-co-curriculum/js-advanced-functions-first-class-functions-lab#readme",
   "devDependencies": {
-    "learn-browser": "^0.1.6"
+    "learn-browser": "^0.1.13"
   }
 }
