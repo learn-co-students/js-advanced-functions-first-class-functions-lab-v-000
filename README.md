@@ -1,22 +1,22 @@
 # First-Class Functions Lab
 
 ## Objectives
-1. Practice invoking functions assigned to a variable
-2. Practice invoking functions stored in a data structure
-3. Practice writing functions that return other functions
-4. Practice passing a function to another function
-5. Practice calling a function returned by another function
+1. Invoke functions assigned to a variable.
+2. Invoke functions stored in a data structure.
+3. Write functions that return other functions.
+4. Pass a function to another function.
+5. Call a function returned by another function.
 
 ## Introduction
-Functions are a very important part of JavaScript, and you will use them pretty much all of the time. Without functions, we wouldn't get anything done! In this lab, we'll take a look at how we can use first-class functions to pass around functions, or return them.
+Functions are a very important part of JavaScript, and you will use them all the time. Without functions, we wouldn't get anything done! In this lab, we'll take a look at how we can use functions as first-class objects to pass them around, store them in variables and data structures, and return them from other functions.
 
-+ `returnFirstTwoDrivers()` - Declare this as a JavaScript constant that is assigned to a function. The assigned function should accept an array of drivers as an argument and return the first two drivers in the array.
-+ `returnLastTwoDrivers()` - Declare this as a JavaScript constant that is assigned to a function. The assigned function should accept an array of drivers as an argument and return the last two drivers in the array.
-+ `selectingDrivers` - This is an array that whose elements are the two functions (`returnFirstTwoDrivers()` and `returnLastTwoDrivers()`) that we previously defined.
-+ `createFareMultiplier()` - This is a higher-order function that takes in an integer as an argument and returns a function that will multiply a fare for a ride accordingly. So if `createFareMultiplier()` receives an argument of `4`, it will return a function that takes in an argument of a fare, and quadruples that fare.
-+ `fareDoubler()` - This is a constant assigned to the return value value of the `createFareMultiplier` function. The `fareDoubler()` function will take an argument of a fare and double it.
-+ `fareTripler()` - This is a constant assigned to the return value value of the `createFareMultiplier()` function. The `fareTripler()` function will take an argument of a fare and triple it.
-+ `selectDifferentDrivers()` - This function takes two arguments, an array of `drivers` as the first argument and either the `returnFirstTwoDrivers()` function or the `returnLastTwoDrivers()` as the second argument. Based on these two arguments, the `selectDifferentDrivers()` will return use the arguments to return either the first two drivers or the last two drivers.
++ `returnFirstTwoDrivers()` — Declare a variable with `const` that is assigned an anonymous function. The assigned function should accept an array of drivers as an argument and return the **first** two drivers in the array.
++ `returnLastTwoDrivers()` — Declare a variable with `const` that is assigned an anonymous function. The assigned function should accept an array of drivers as an argument and return the **last** two drivers in the array.
++ `selectingDrivers` — This is an array containing two elements: the two functions that we previously defined (`returnFirstTwoDrivers()` and `returnLastTwoDrivers()`).
++ `createFareMultiplier()` — This is a higher-order function that takes in one argument, an integer, and returns a function that will multiply a fare for a ride accordingly. If `createFareMultiplier()` receives an argument of `4`, it will return a function that takes in a fare as an argument and quadruples the fare.
++ `fareDoubler()` — Declare a variable with `const` and assign a function returned by `createFareMultiplier()` to it. Invoke `createFareMultiplier()` in such a way that the new `fareDoubler()` function accepts a fare as its lone argument and doubles it.
++ `fareTripler()` — Declare a variable with `const` and assign a function returned by `createFareMultiplier()` to it. Invoke `createFareMultiplier()` in such a way that the new `fareTripler()` function accepts a fare as its lone argument and triples it.
++ `selectDifferentDrivers()` — This function takes two arguments, an array of `drivers` and either the `returnFirstTwoDrivers()` or `returnLastTwoDrivers()` function. Based on these two arguments, `selectDifferentDrivers()` will return either the first two drivers or the last two drivers.
 
 ## Resources
 - [Wikipedia: First-class function](https://en.wikipedia.org/wiki/First-class_function)
