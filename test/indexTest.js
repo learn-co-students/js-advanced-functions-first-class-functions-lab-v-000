@@ -2,40 +2,44 @@ const expect = chai.expect;
 
 describe('index.js', function () {
   describe('returnFirstTwoDrivers()', function () {
-    it('should return an array of the first two drivers', function () {
-      expect(returnFirstTwoDrivers(['Sally', 'Bob', 'Freddy', 'Claudia'])).to.eql(['Sally', 'Bob']);
+    it('should return a new array containing the first two drivers from the passed-in array', function () {
+      const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
+
+      expect(returnFirstTwoDrivers(drivers)).to.eql(['Sally', 'Bob']);
+
+      expect(drivers).to.eql(['Sally', 'Bob', 'Freddy', 'Claudia']);
     });
 
-    it('should be set to a constant', function () {
-      expect(function () { returnFirstTwoDrivers = function () { return 'new function'}} ).to.throw(TypeError);
+    it('should be assigned to a constant', function () {
+      expect(function () { returnFirstTwoDrivers = 'testing reassignment'; }).to.throw(TypeError);
     });
   });
 
-  describe('`returnLastTwoDrivers` function', function () {
+  describe('returnLastTwoDrivers()', function () {
     it('should return an array of the last two drivers', function () {
+      const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
+
       expect(returnLastTwoDrivers(['Sally', 'Bob', 'Freddy', 'Claudia'])).to.eql(['Freddy', 'Claudia']);
+
+      expect(drivers).to.eql(['Sally', 'Bob', 'Freddy', 'Claudia']);
     });
 
-    it('should be set to a constant', function () {
-      expect(function () { returnLastTwoDrivers = function () { return 'new function'; } }).to.throw(TypeError);
+    it('should be assigned to a constant', function () {
+      expect(function () { returnLastTwoDrivers = 'testing reassignment'; }).to.throw(TypeError);
     });
   });
 
   describe('selectingDrivers', function () {
-    it('is an array (so it naturally responds to the `slice` method)', function () {
-      expect(selectingDrivers.slice).to.equal(Array.prototype.slice);
-    });
-
     it('has the `returnFirstTwoDrivers` function to as its first element', function () {
       expect(selectingDrivers[0]).to.eql(returnFirstTwoDrivers);
     });
 
     it('has the `returnLastTwoDrivers` function to as its last element', function () {
-      expect(selectingDrivers[selectingDrivers.length-1]).to.eql(returnLastTwoDrivers);
+      expect(selectingDrivers[1]).to.eql(returnLastTwoDrivers);
     });
 
     it('allows us to invoke either function from the array', function () {
-      let drivers = ['Sally', 'Bob', 'Freddy', 'Claudia']
+      const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
 
       expect(selectingDrivers[0](drivers)).to.eql(['Sally', 'Bob']);
 
@@ -43,43 +47,49 @@ describe('index.js', function () {
     });
   });
 
-  describe('`createFareMultiplier` function', function () {
-    it('should return a function', function () {
-      const doubler = createFareMultiplier(2);
+  describe('createFareMultiplier()', function () {
+    it('returns a function', function () {
+      const fareMultiplier = createFareMultiplier(2);
 
-      expect(doubler).to.be.a('function');
+      expect(fareMultiplier).to.be.a('function');
     });
 
     it('should multiply a given value using the created multiplier', function () {
-      const fareDoubler = createFareMultiplier(2);
+      const fareQuintupler = createFareMultiplier(5);
 
-      expect(fareDoubler(5)).to.equal(10);
+      expect(fareQuintupler(5)).to.eql(25);
     });
   });
 
-  describe('FareMultiplier functions created with `createFareMultiplier`', function () {
-    it('should have a doubler function', function () {
+  describe('fareDoubler()', function () {
+    it('is a function', function () {
       expect(fareDoubler).to.be.a('function');
-
-      expect(fareDoubler(5)).to.equal(10);
     });
 
-    it('should have a tripler function', function () {
-      expect(fareTripler).to.be.a('function');
-
-      expect(fareTripler(5)).to.equal(15);
+    it('doubles fares', function () {
+      expect(fareDoubler(10)).to.eql(20);
     });
   });
 
-  describe('`selectDifferentDrivers(drivers, whichDrivers)` function', function () {
-    it('returns the first two drivers when passed through the `returnFirstTwoDrivers` as the second argument', function () {
-      let drivers = ['Sally', 'Bob', 'Freddy', 'Claudia']
+  describe('fareTripler()', function () {
+    it('is a function', function () {
+      expect(fareTripler).to.be.a('function');
+    });
+
+    it('triples fares', function() {
+      expect(fareTripler(12)).to.eql(36);
+    });
+  });
+
+  describe('selectDifferentDrivers(array, function)', function () {
+    it('returns the first two drivers when passed returnFirstTwoDrivers() as the second argument', function () {
+      const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
 
       expect(selectDifferentDrivers(drivers, returnFirstTwoDrivers)).to.eql(['Sally', 'Bob']);
     });
 
-    it('returns the last two drivers when passed through the `returnLastTwoDrivers` as the second argument', function () {
-      let drivers = ['Sally', 'Bob', 'Freddy', 'Claudia']
+    it('returns the last two drivers when passed returnLastTwoDrivers() as the second argument', function () {
+      const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia']
 
       expect(selectDifferentDrivers(drivers, returnLastTwoDrivers)).to.eql(['Freddy', 'Claudia']);
     });
