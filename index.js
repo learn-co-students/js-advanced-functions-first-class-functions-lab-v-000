@@ -1,15 +1,15 @@
 // returnFirstTwoDrivers() — Declare a variable with const that is assigned an anonymous function. The assigned function should accept an array of drivers as an argument and return the first two drivers in the array.
 const returnFirstTwoDrivers = function (drivers) {
-    return [drivers[0], drivers[1]];
+    return drivers.slice(0,2);
 };
 
 // returnLastTwoDrivers() — Declare a variable with const that is assigned an anonymous function. The assigned function should accept an array of drivers as an argument and return the last two drivers in the array.
 const returnLastTwoDrivers = function(drivers){
-    return [drivers.slice(-2,-1)[0], drivers.slice(-1)[0]];
+    return drivers.slice(-2);
 };
 
 // selectingDrivers — This is an array containing two elements: the two functions that we previously defined (returnFirstTwoDrivers() and returnLastTwoDrivers()).
-const selectingDrivers = [ returnFirstTwoDrivers, returnLastTwoDrivers];
+const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
 // createFareMultiplier() — This is a higher-order function that takes in one argument, an integer, and returns a function that will multiply a fare for a ride accordingly. If createFareMultiplier() receives an argument of 4, it will return a function that takes in a fare as an argument and quadruples the fare.
 function createFareMultiplier(multiplier) {
@@ -25,6 +25,6 @@ const fareDoubler = createFareMultiplier(2);
 const fareTripler = createFareMultiplier(3);
 
 // selectDifferentDrivers() — This function takes two arguments, an array of drivers and either the returnFirstTwoDrivers() or returnLastTwoDrivers() function. Based on these two arguments, selectDifferentDrivers() will return either the first two drivers or the last two drivers.
-function selectDifferentDrivers(drivers, twoDrivers) {
-    return twoDrivers(drivers);
+function selectDifferentDrivers(drivers, selectedDrivers) {
+    return selectedDrivers(drivers);
 }
