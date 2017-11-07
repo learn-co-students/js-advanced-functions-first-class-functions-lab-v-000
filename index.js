@@ -12,13 +12,9 @@ const createFareMultiplier = function (num) {
   return function (multiplier) { return multiplier*num};
 }
 
-const fareDoubler = function (num) {
-  return num*2;
-}
+const fareDoubler = createFareMultiplier(2);
 
-const fareTripler = function (num) {
-  return num*3;
-}
+const fareTripler = createFareMultiplier(3);
 
 const selectDifferentDrivers = function (arrayOfDrivers, func) {
   return func (arrayOfDrivers);
