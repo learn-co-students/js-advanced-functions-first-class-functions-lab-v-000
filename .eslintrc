@@ -1,0 +1,10 @@
+{
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "experimentalObjectRestSpread": true
+    },
+    "rules": {
+        "array-callback-return": "error"
+    }
+}
