@@ -87,3 +87,7 @@ describe('index.js', function () {
     });
   });
 });
+
+function selectDifferentDrivers (array, func) {
+  return func(array)
+}
