@@ -18,8 +18,8 @@ const selectingDrivers = [
 ];
 
 const createFareMultiplier = function(multiplier) {
-  return function (fare) {
-    return multiplier * fare;
+  return function (value) {
+    return multiplier * value;
   }
 }
 
@@ -27,6 +27,6 @@ const fareDoubler = createFareMultiplier(2);
 
 const fareTripler = createFareMultiplier(3);
 
-const selectDifferentDrivers = function(arrayOfDrivers, cb) {
-  return cb(arrayOfDrivers);
+const selectDifferentDrivers = function(arrayOfDrivers, whichDrivers) {
+  return whichDrivers(arrayOfDrivers);
 }
