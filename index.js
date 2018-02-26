@@ -8,10 +8,10 @@ function createFareMultiplier (multiply) {
   return function (fare) {return fare * multiply}
 }
 
-const fareDoubler = (fare) => createFareMultiplier(2)(fare)
+const fareDoubler = createFareMultiplier(2)
 
-const fareTripler = (fare) => createFareMultiplier(3)(fare)
+const fareTripler = createFareMultiplier(3)
 
-function selectDifferentDrivers(drivers, callback){
-  return callback(drivers)
+function selectDifferentDrivers(drivers, select){
+  return select(drivers)
 }
