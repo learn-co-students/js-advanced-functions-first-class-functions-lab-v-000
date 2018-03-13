@@ -10,7 +10,7 @@ const returnLastTwoDrivers = function (list) {
   return list.slice(-2);
 }
 
-const selectingDrivers  = [returnFirstTwoDrivers, returnLastTwoDrivers]
+const selectingDrivers  = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
 function createFareMultiplier(number) {
   return function (fare) {
@@ -22,10 +22,6 @@ const fareDoubler = createFareMultiplier(2);
 
 const fareTripler = createFareMultiplier(3);
 
-function selectDifferentDrivers(drivers, returnDrivers) {
-  if (returnDrivers === returnFirstTwoDrivers){
-    return returnFirstTwoDrivers(drivers);
-  } else if (returnDrivers === returnLastTwoDrivers){
-    return returnLastTwoDrivers(drivers);
-  }
-}
+const selectDifferentDrivers = function (drivers, driversFunction) {
+  return driversFunction(drivers);
+};
