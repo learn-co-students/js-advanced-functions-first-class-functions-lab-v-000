@@ -1,25 +1,32 @@
 // Code your solution in this file!
 
-const returnFirstTwoDrivers = function (drivers) {
-  return drivers.slice(0, 2);
-};
+// const returnFirstTwoDrivers = function (drivers) {
+//   return drivers.slice(0, 2);
+// };
 
-const returnLastTwoDrivers = function (drivers) {
-  return drivers.slice(-2);
-};
+const returnFirstTwoDrivers = drivers => drivers.slice(0,2);
+
+// const returnLastTwoDrivers = function (drivers) {
+//   return drivers.slice(-2);
+// };
+
+const returnLastTwoDrivers = drivers => drivers.slice(-2);
 
 const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
-const createFareMultiplier = function (multValue) {
-  return function (value) {
-    return multValue * value;
-  };
-};
+// const createFareMultiplier = function (multValue) {
+//   return function (value) {
+//     return multValue * value;
+//   };
+// };
+
+const createFareMultiplier = multValue => value => multValue*value;
 
 const fareDoubler = createFareMultiplier(2);
 
 const fareTripler = createFareMultiplier(3);
 
-const selectDifferentDrivers = function (drivers, chosenDrivers) {
-  return chosenDrivers(drivers);
-};
+// const selectDifferentDrivers = function (drivers, chosenDrivers) {
+//   return chosenDrivers(drivers);
+// };
+const selectDifferentDrivers = (drivers, chosenDrivers) => chosenDrivers(drivers)
