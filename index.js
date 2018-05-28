@@ -15,14 +15,14 @@ const createFareMultiplier=function(multiplier){
   }
 }
 
-function fareDoubler(){
-
+function fareDoubler(fare){
+ return createFareMultiplier(fare)(2)
 }
 
-function fareTripler(){
-
+function fareTripler(fare){
+ return createFareMultiplier(fare)(3)
 }
 
 function selectDifferentDrivers(drivers,fn){
-
+ return fn(drivers)
 }
