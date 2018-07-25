@@ -22,3 +22,8 @@ function fareDoubler(fare) {
   const doubler = createFareMultiplier(2)()
   return doubler;
 }
+
+function fareTripler(fare) {
+  const tripler = createFareMultiplier(3)()
+  return tripler;
+}
