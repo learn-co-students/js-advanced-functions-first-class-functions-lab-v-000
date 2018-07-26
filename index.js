@@ -38,3 +38,6 @@ function fareTripler(fare){
     return variable(fare);
  }
  
+function selectDifferentDrivers(drivers, cb){
+    return cb(drivers);
+}
