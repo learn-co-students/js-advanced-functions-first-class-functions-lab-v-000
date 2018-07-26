@@ -18,8 +18,23 @@ function createFareMultiplier(integer){
     }
 }
 
+
+
+function fareDoubler(fare){
+    const variable = createFareMultiplier(2);
+    return variable(fare);
+ }
+ 
+ /* ----LESS INTUITIVE SOLN-----
 function fareDoubler(fare){
    const variable = createFareMultiplier(2)(fare);
+   return variable;
 }
+*/
 
 
+function fareTripler(fare){
+    const variable = createFareMultiplier(3);
+    return variable(fare);
+ }
+ 
