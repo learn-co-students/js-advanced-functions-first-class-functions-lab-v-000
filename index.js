@@ -15,13 +15,16 @@ function createFareMultiplier(integer) {
   };
 }
 
-const fareDoubler = function (fare) {
-  return createFareMultiplier(2)(fare);
-}
+const fareDoubler = createFareMultiplier(2);
 
-const fareTripler = function (fare) {
-  return createFareMultiplier(3)(fare);
-}
+const fareTripler = createFareMultiplier(3);
+// const fareDoubler = function (fare) {
+//   return createFareMultiplier(2)(fare);
+// }
+//
+// const fareTripler = function (fare) {
+//   return createFareMultiplier(3)(fare);
+// }
 
 function selectDifferentDrivers(arrayOfDrivers, someFunction) {
   return someFunction(arrayOfDrivers);
