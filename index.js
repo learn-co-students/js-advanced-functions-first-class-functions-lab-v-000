@@ -17,17 +17,13 @@ const selectingDrivers = [
 
 const createFareMultiplier = function (number) {
   return function (fare) {
-    return fare * 5
+    return fare * number
   }
 }
 
-function fareDoubler(fare) {
-  return fare * 2
-}
+const fareDoubler = createFareMultiplier(2)
 
-function fareTripler(fare) {
-  return fare * 3
-}
+const fareTripler = createFareMultiplier(3)
 
 
 function selectDifferentDrivers(drivers, returnDrivers) {
