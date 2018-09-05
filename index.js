@@ -5,22 +5,29 @@
  const returnFirstTwoDrivers = function (nonDestructiveDrivers) {
    return nonDestructiveDrivers.slice(0,2)
  }
-returnFirstTwoDrivers;
 
  // Declare a variable with const that is assigned an anonymous function, assigned function accepts an array of drivers as an argument and returns the last two drivers in the array
 
  const returnLastTwoDrivers = function (nonDestructiveDrivers) {
-   return nonDestructiveDrivers.slice(2)
+   return nonDestructiveDrivers.slice(2);
  }
- returnLastTwoDrivers;
 
-// array containing two elements: the two functions that we previously defined (returnFirstTwoDrivers() and returnLastTwoDrivers()).
+// array containing two elements: the two functions that we previously defined (returnFirstTwoDrivers() and returnLastTwoDrivers())
 
-const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
-selectingDrivers;
+const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
-// takes in one argument, an integer, and returns a function that will multiply a fare for a ride accordingly. If createFareMultiplier() receives an argument of 4, it will return a function that takes in a fare as an argument and quadruples the fare.
+// takes in one argument, an integer, and returns a function that will multiply a fare for a ride
+
 const createFareMultiplier = function(integer) {
-   return function(fare) {return fare *= integer}
+   return function(fare) {return fare *= integer};
  }
-createFareMultiplier;
+
+
+// Declare a variable with const and assign a function returned by createFareMultiplier() to it. Invoke createFareMultiplier() in such a way that the new fareDoubler() function accepts a fare as its lone argument and doubles it.
+
+const fareDoubler = createFareMultiplier(2);
+
+ // triples it.
+const fareTripler = createFareMultiplier(3);
+
+// This function takes two arguments, an array of drivers and either the returnFirstTwoDrivers() or returnLastTwoDrivers() function. Based on these two arguments, selectDifferentDrivers() will return either the first two drivers or the last two drivers.
