@@ -1,5 +1,5 @@
-const returnFirstTwoDrivers = drivers => [drivers[0], drivers[1]]
-const returnLastTwoDrivers = drivers => [drivers.slice(-2)[0], drivers.slice(-1)[0]]
+const returnFirstTwoDrivers = drivers => drivers.slice(0, 2)
+const returnLastTwoDrivers = drivers => drivers.slice(-2)
 const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
 const selectDifferentDrivers = (drivers, func) => func(drivers)
 
