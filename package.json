@@ -4,8 +4,8 @@
   "description": "First-Class Functions Lab for Learn.co",
   "main": "index.js",
   "scripts": {
-   "postinstall": "gem install learn-co",
-   "test": "node_modules/browser-sync/bin/browser-sync.js start --config node_modules/learn-browser/bs-config.js"
+    "postinstall": "gem install learn-co",
+    "test": "node_modules/browser-sync/bin/browser-sync.js start --config node_modules/learn-browser/bs-config.js"
   },
   "repository": {
     "type": "git",
