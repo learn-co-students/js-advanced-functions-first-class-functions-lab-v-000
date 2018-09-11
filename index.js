@@ -8,27 +8,14 @@ const returnLastTwoDrivers = function (drivers) {
 
 let selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
 
-const fareDoubler = function (fare) {
-  return fare * 2;
+const createFareMultiplier = function (n) {
+  return function (fare) {
+    return fare * n ;
+  };
 };
 
-const fareQuintupler = function (fare) {
-  return fare * 5;
-};
-
-const fareTripler = function (fare) {
-  return fare * 3;
-};
-
-function createFareMultiplier (n) {
-  if (n === 2) {
-    return fareDoubler;
-  } else if (n === 3) {
-    return fareTripler;
-  } else if (n === 5) {
-    return fareQuintupler;
-  }
-};
+const fareDoubler = createFareMultiplier (2);
+const fareTripler = createFareMultiplier (3);
 
 function fetchSpecifiedDrivers (arrayOfDrivers, someFunction) {
   if (someFunction === returnFirstTwoDrivers) {
