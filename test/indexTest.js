@@ -86,4 +86,5 @@ describe('index.js', function () {
       expect(fetchSpecifiedDrivers(drivers, returnLastTwoDrivers)).to.eql(['Freddy', 'Claudia']);
     });
   });
+
 });
