@@ -6,8 +6,7 @@ const returnFirstTwoDrivers = function (arrOfDriverObjs){
 
 //returns an array of the last two drivers
 const returnLastTwoDrivers = function (arrOfDriverObjs){
-  const copy = arrOfDriverObjs.slice(0);
-  return copy.splice(-2);
+  return arrOfDriverObjs.slice(-2);
 }
 
 
