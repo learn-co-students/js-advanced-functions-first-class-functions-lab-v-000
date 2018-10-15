@@ -10,19 +10,15 @@ const returnLastTwoDrivers = (array) => {
 const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
 const createFareMultiplier = (multiplier) => {
-  return function(fare) {
+  return (fare) => {
     return multiplier * fare;
   };
 };
 
-const fareDoubler = (fare) => {
-  return fare * 2;
-};
+const fareDoubler = createFareMultiplier(2);
 
-const fareTripler = (fare) => {
-  return fare * 3;
-};
+const fareTripler = createFareMultiplier(3);
 
 const fetchSpecifiedDrivers = (drivers, fn) => {
   return fn(drivers);
-}
+};
