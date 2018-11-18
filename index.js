@@ -1,11 +1,7 @@
 // Code your solution in this file!
 
 const returnFirstTwoDrivers = function (drivers) {
-  let array = [];
-  array.push(drivers[0]);
-  array.push(drivers[1]);
-
-  return array;
+  return drivers.slice(0, 2)
 };
 
 const returnLastTwoDrivers = function (drivers) {
