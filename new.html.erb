@@ -1,0 +1,7 @@
+<h1>Create a new Manager Profile Below:</h1>
+  <%= render 'manager' %>
+    <div class="fields_with_errors">
+      <% if flash[:message] %>
+        <%= flash[:message] %>
+      <% end %>
+    </div>
