@@ -38,7 +38,7 @@ describe('index.js', function () {
 
     it('allows us to invoke either function from the array', function () {
       expect(selectingDrivers[0](drivers)).to.eql(['Sally', 'Bob']);
-
+			console.log(selectingDrivers[0](drivers));
       expect(selectingDrivers[1](drivers)).to.eql(['Freddy', 'Claudia']);
     });
   });
