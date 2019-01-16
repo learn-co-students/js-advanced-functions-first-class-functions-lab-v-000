@@ -1,13 +1,13 @@
 // Code your solution in this file!
 
 const returnFirstTwoDrivers = function(drivers) {
-	return drivers.slice(0,2)
+	return drivers.slice(0,2);
 };
 
 //returns the first two drivers
 
 const returnLastTwoDrivers = function(drivers) {
-	return drivers.slice(-2)
+	return drivers.slice(-2);
 };
 
 //returns the last two drivers
@@ -31,8 +31,8 @@ const fareDoubler = createFareMultiplier(2);  //doubles the fare
 const fareTripler = createFareMultiplier(3);  //triples the fare
 
 
-function fetchSpecifiedDrivers(drivers, arrayOfDrivers) {
-	return arrayOfDrivers(drivers)
+function fetchSpecifiedDrivers(drivers, whichDrivers) {
+	return whichDrivers(drivers)
 };
 
 //returns the first two drivers when passed returnFirstTwoDrivers() as the second argument
