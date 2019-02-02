@@ -35,3 +35,8 @@ function fetchSpecifiedDrivers(arrayOfDrivers, fcn){
         return returnLastTwoDrivers(arrayOfDrivers);
     };
 }
+
+// DON'T KNOW WHY THIS WAS IN THE ANSWER KEY.....
+// const selectDifferentDrivers = function(drivers, whichDrivers) {
+//     return whichDrivers(drivers);
+// }
