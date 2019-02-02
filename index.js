@@ -4,7 +4,7 @@ const returnFirstTwoDrivers = function(collection) {
     }
 
 const returnLastTwoDrivers = function(collection) {
-        return collection.slice(-2,collection.length);
+        return collection.slice(-2);
     }
 
 const selectingDrivers = [
