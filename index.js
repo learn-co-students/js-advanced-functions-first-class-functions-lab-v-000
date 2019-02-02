@@ -23,3 +23,7 @@ const fareTripler = createFareMultiplier(3);
 function fetchSpecifiedDrivers(array, fn) {
     return fn(array);
 }
+
+function fetchFare(num, fn) {
+    return fn(num)
+}
