@@ -1,5 +1,3 @@
-const expect = chai.expect;
-
 describe('index.js', function () {
   const drivers = ['Sally', 'Bob', 'Freddy', 'Claudia'];
 
