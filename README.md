@@ -1,4 +1,4 @@
-# First-Class Functions Lab
+# JavaScript Advanced Functions: First-Class Functions Lab
 
 ## Objectives
 1. Invoke functions assigned to a variable.
