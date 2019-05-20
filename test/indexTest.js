@@ -9,19 +9,11 @@ describe('index.js', function () {
     it('should return a new array containing the first two drivers from the passed-in array', function () {
       expect(returnFirstTwoDrivers(drivers)).to.eql(['Sally', 'Bob']);
     });
-
-    it('should be assigned to a constant', function () {
-      expect(function () { returnFirstTwoDrivers = 'testing reassignment'; }).to.throw(TypeError);
-    });
   });
 
   describe('returnLastTwoDrivers()', function () {
     it('should return an array of the last two drivers', function () {
       expect(returnLastTwoDrivers(['Sally', 'Bob', 'Freddy', 'Claudia'])).to.eql(['Freddy', 'Claudia']);
-    });
-
-    it('should be assigned to a constant', function () {
-      expect(function () { returnLastTwoDrivers = 'testing reassignment'; }).to.throw(TypeError);
     });
   });
 
@@ -75,13 +67,13 @@ describe('index.js', function () {
     });
   });
 
-  describe('fetchSpecifiedDrivers(arrayOfDrivers, function)', function () {
+  describe('selectDifferentDrivers(arrayOfDrivers, function)', function () {
     it('returns the first two drivers when passed returnFirstTwoDrivers() as the second argument', function () {
-      expect(fetchSpecifiedDrivers(drivers, returnFirstTwoDrivers)).to.eql(['Sally', 'Bob']);
+      expect(selectDifferentDrivers(drivers, returnFirstTwoDrivers)).to.eql(['Sally', 'Bob']);
     });
 
     it('returns the last two drivers when passed returnLastTwoDrivers() as the second argument', function () {
-      expect(fetchSpecifiedDrivers(drivers, returnLastTwoDrivers)).to.eql(['Freddy', 'Claudia']);
+      expect(selectDifferentDrivers(drivers, returnLastTwoDrivers)).to.eql(['Freddy', 'Claudia']);
     });
   });
 });
