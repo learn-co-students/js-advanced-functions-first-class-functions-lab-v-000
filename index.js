@@ -1,9 +1,9 @@
-function returnFirstTwoDrivers(arr){
+const returnFirstTwoDrivers = function(arr){
     return arr.slice(0,2);
 }
 
-function returnLastTwoDrivers(arr){
-    return arr.slice(arr.length - 2);
+const returnLastTwoDrivers = function(arr){
+    return arr.slice(-2);
 }
 
 let selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
