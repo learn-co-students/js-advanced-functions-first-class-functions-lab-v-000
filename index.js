@@ -12,6 +12,9 @@ const returnFirstTwoDrivers = (array) =>  {
 }
 
 
+
+
+
 const returnLastTwoDrivers = (array) => {
   const new_arr = []
   let removed = array.slice(-2)
