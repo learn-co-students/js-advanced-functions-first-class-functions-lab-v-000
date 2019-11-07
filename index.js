@@ -1,34 +1,60 @@
-// Code your solution in this file!
-function returnFirstTwoDrivers(drivers) {
-    let firstTwoDrivers = [];
-    firstTwoDrivers.push(drivers[0]);
-    firstTwoDrivers.push(drivers[1]);
-    return firstTwoDrivers 
+// Code your solution in this file
+
+// function returnFirstTwoDrivers(drivers) {
+//     let firstTwoDrivers = [];
+//     firstTwoDrivers.push(drivers[0]);
+//     firstTwoDrivers.push(drivers[1]);
+//     return firstTwoDrivers 
+// };
+
+// function returnLastTwoDrivers(drivers) {
+//     let lastTwoDrivers = drivers.slice(-2);
+//     return lastTwoDrivers;
+// };
+
+// let selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
+
+// function createFareMultiplier(factor) {
+//     return function(number) {
+//         return factor * number;
+//     };
+// };
+
+// function fareDoubler (fare) {
+//     let doubler = createFareMultiplier(2);
+//     return doubler(fare);
+// };
+
+// function fareTripler(fare) {
+//     let tripler = createFareMultiplier(3);
+//     return tripler(fare);
+// };
+
+// function selectDifferentDrivers(arrayOfDrivers, functionToCall) {
+//     return functionToCall(arrayOfDrivers);
+// };
+
+
+const returnFirstTwoDrivers = function(driversArray) {
+    return driversArray.slice(0,2)
 };
 
-function returnLastTwoDrivers(drivers) {
-    let lastTwoDrivers = drivers.slice(-2);
-    return lastTwoDrivers;
+const returnLastTwoDrivers = function(driversArray) {
+    return driversArray.slice(-2)
 };
 
-let selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
+const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
-function createFareMultiplier(factor) {
-    return function(number) {
-        return factor * number;
-    };
+const createFareMultiplier = function(integer) {
+    return function(fare) {
+        return fare * integer;
+    }
 };
 
-function fareDoubler (fare) {
-    let doubler = createFareMultiplier(2);
-    return doubler(fare);
-};
+const fareDoubler = createFareMultiplier(2);
 
-function fareTripler(fare) {
-    let tripler = createFareMultiplier(3);
-    return tripler(fare);
-};
+const fareTripler = createFareMultiplier(3);
 
-function selectDifferentDrivers(arrayOfDrivers, functionToCall) {
-    return functionToCall(arrayOfDrivers);
-};
+const selectDifferentDrivers = function(driversArray, action) {
+    return action(driversArray)
+}
