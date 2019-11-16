@@ -20,4 +20,6 @@ const fareTripler = function(fare) {return fare*3}
 
 const fetchSpecifiedDrivers = function(arrayOfDrivers, fun) {
       return fun(arrayOfDrivers)
+
+      
 }
