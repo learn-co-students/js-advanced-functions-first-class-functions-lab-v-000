@@ -14,10 +14,21 @@ const selectingDrivers = [returnFirstTwoDrivers,returnLastTwoDrivers]
 
 
 function createFareMultiplier(int){
-  return int*4
+   return function(fare){
+     const fareQuintupler = fare * int
+     return fareQuintupler
+}
+}
+
+function fareDoubler(int){
+  const double = createFareMultiplier(int)
+  return double
+}
+
+function fareTripler(){
 
 }
 
-const fareDoubler = function(arr){
+function selectDifferentDrivers(drivers,returnFirstTwoDrivers){
 
 }
