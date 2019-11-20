@@ -7,5 +7,17 @@ const returnFirstTwoDrivers = function(arr){
 }
 
 const returnLastTwoDrivers = function(arr){
-  return arr.pop(1,arr.length)
+  return arr.slice(arr.length-2,arr.length-0)
+}
+
+const selectingDrivers = function(arr){
+
+}
+
+const createFareMultiplier = function(arr){
+
+}
+
+const fareDoubler = function(arr){
+
 }
