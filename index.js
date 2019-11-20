@@ -10,11 +10,11 @@ const returnLastTwoDrivers = function(arr){
   return arr.slice(arr.length-2,arr.length-0)
 }
 
-const selectingDrivers = function(arr){
+const selectingDrivers = [returnFirstTwoDrivers,returnLastTwoDrivers]
 
-}
 
-const createFareMultiplier = function(arr){
+function createFareMultiplier(int){
+  return int*4
 
 }
 
