@@ -20,15 +20,15 @@ function createFareMultiplier(int){
 }
 }
 
-function fareDoubler(int){
-  const double = createFareMultiplier(int)
-  return double
-}
 
-function fareTripler(){
+  const fareDoubler = createFareMultiplier(2)
+  const fareTripler = createFareMultiplier(3)
 
-}
-
-function selectDifferentDrivers(drivers,returnFirstTwoDrivers){
-
+function selectDifferentDrivers(drivers,fx){
+  if (fx === returnFirstTwoDrivers){
+    return returnFirstTwoDrivers(drivers)
+    }
+  else{
+    return returnLastTwoDrivers(drivers)
+  }
 }
