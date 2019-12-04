@@ -42,5 +42,5 @@ const fareTripler = function(num) {
 const fareTripler = createFareMultiplier(3);
 
 const fetchSpecifiedDrivers = function(drivers, returnedDrivers) {
-  return returnedDrivers(drivers);
+  return returnedDrivers(drivers); 
 }
