@@ -1,24 +1,24 @@
 // Code your solution in this file!
 
-const drivers = ['adam', 'eve']
+//const drivers = ["sally", 'mike', 'john']
+
 
 const returnFirstTwoDrivers = function(drivers) {
     return drivers.slice(0, 2);
-}
+};
+
 
 const returnLastTwoDrivers = function(drivers) {
-    return drivers.slice(-2);
-}
+    return drivers.slice(drivers.length - 2);
+};
 
-const selectingDrivers = [
-    returnFirstTwoDrivers, returnLastTwoDrivers
-]
+const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
-const createFareMultiplier = function(i) {
-    return function(num) {
-        return num * i;
-    }
-}
+const createFareMultiplier = function(multiplier) {
+    return function(fare) {
+        return multiplier * fare;
+    };
+};
 
 const fareDoubler = createFareMultiplier(2);
 const fareTripler = createFareMultiplier(3);
@@ -26,3 +26,5 @@ const fareTripler = createFareMultiplier(3);
 const fetchSpecifiedDrivers = function(drivers, returnFirstTwoDrivers) {
     return returnFirstTwoDrivers(drivers);
 }
+
+
