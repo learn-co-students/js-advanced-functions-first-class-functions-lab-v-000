@@ -4,7 +4,12 @@
   "description": "First-Class Functions Lab for Learn.co",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
+=======
+    "postinstall": "gem install learn-co",
+    "test": "node_modules/browser-sync/bin/browser-sync.js start --config node_modules/learn-browser/bs-config.js"
+>>>>>>> 4df12f516a0380e844ab66f6aae2a0b7bad9f5bd
   },
   "repository": {
     "type": "git",
