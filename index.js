@@ -10,7 +10,7 @@ const returnLastTwoDrivers = function(drivers){
 
 
 
-//selectingDrivers — This is an array containing two elements: the two functions
+//selectingDrivers — This is anarray containing two elements: the two functions
 // that we previously defined (returnFirstTwoDrivers() and returnLastTwoDrivers()).
 
 const selectingDrivers = [ returnFirstTwoDrivers,returnLastTwoDrivers ];
