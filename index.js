@@ -59,8 +59,6 @@ function fetchSpecifiedDrivers(drivers, f) {
     //else {returnLastTwoDrivers(drivers);}
 //}
 
-
-
 //function fetchSpecifiedDrivers(drivers, function) {
     //if (returnFirstTwoDrivers) {returnFirstTwoDrivers(drivers);}
     //else {returnLastTwoDrivers(drivers);}
