@@ -24,5 +24,5 @@ Functions are a very important part of JavaScript, and you will use them all the
 
 - [Wikipedia: First-class function](https://en.wikipedia.org/wiki/First-class_function)
 - [MDN: Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
-- [JavaScript is Sexy: Higher-Order Functions](http://javascriptissexy.com/tag/higher-order-functions/)
+- [JavaScript is Sexy: Higher-Order Functions](https://javascriptissexy.com/tag/higher-order-functions/)
 
