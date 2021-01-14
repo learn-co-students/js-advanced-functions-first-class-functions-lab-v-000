@@ -1,5 +1,5 @@
 // Code your solution in this file!
-const returnFirstTwoDrivers = function (drivers) {
+const returnFirstTwoDrivers = function(drivers) {
   return drivers.slice(0,2);
 }
 
@@ -19,6 +19,6 @@ const fareDoubler = createFareMultiplier(2);
 
 const fareTripler = createFareMultiplier(3);
 
-function fetchSpecifiedDrivers(drivers, cb) {
-  return cb(drivers)
+const fetchSpecifiedDrivers = function(arrayOfDrivers, f) {
+  return f(arrayOfDrivers)
 }
