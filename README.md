@@ -2,8 +2,8 @@
 
 ## Objectives
 
-1. Invoke functions assigned to a variable.
-2. Invoke functions stored in a data structure.
+1. Assign functions to a variable.
+2. Store functions in a data structure.
 3. Write functions that return other functions.
 4. Pass a function to another function.
 5. Call a function returned by another function.
@@ -24,5 +24,4 @@ Functions are a very important part of JavaScript, and you will use them all the
 
 - [Wikipedia: First-class function](https://en.wikipedia.org/wiki/First-class_function)
 - [MDN: Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
-- [JavaScript is Sexy: Higher-Order Functions](https://javascriptissexy.com/tag/higher-order-functions/)
-
+- [TypeOfNaN: What is a Higher-Order Function?](https://typeofnan.dev/what-is-a-higher-order-function/)
