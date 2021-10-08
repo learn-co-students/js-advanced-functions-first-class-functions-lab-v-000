@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 9,
-    "tests": 23,
-    "passes": 23,
+    "suites": 10,
+    "tests": 24,
+    "passes": 24,
     "pending": 0,
     "failures": 0,
-    "start": "2021-10-08T18:26:18.104Z",
-    "end": "2021-10-08T18:26:18.520Z",
-    "duration": 416
+    "start": "2021-10-08T19:17:47.136Z",
+    "end": "2021-10-08T19:17:48.821Z",
+    "duration": 1685
   },
   "tests": [
     {
@@ -41,7 +41,7 @@
     {
       "title": "allows us to invoke either function from the array",
       "fullTitle": "index.js selectingDrivers allows us to invoke either function from the array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -132,7 +132,7 @@
     {
       "title": "calculates fares",
       "fullTitle": "index.js fareCalculator() calculates fares",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -167,6 +167,13 @@
     {
       "title": "calculates fares",
       "fullTitle": "index.js fareCalculator() calculates fares",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is a function",
+      "fullTitle": "index.js calculateFareCrossedStations() is a function",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
@@ -206,7 +213,7 @@
     {
       "title": "allows us to invoke either function from the array",
       "fullTitle": "index.js selectingDrivers allows us to invoke either function from the array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -297,7 +304,7 @@
     {
       "title": "calculates fares",
       "fullTitle": "index.js fareCalculator() calculates fares",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -332,6 +339,13 @@
     {
       "title": "calculates fares",
       "fullTitle": "index.js fareCalculator() calculates fares",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is a function",
+      "fullTitle": "index.js calculateFareCrossedStations() is a function",
       "duration": 0,
       "currentRetry": 0,
       "err": {}

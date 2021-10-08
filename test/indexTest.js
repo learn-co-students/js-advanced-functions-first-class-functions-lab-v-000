@@ -147,4 +147,10 @@ describe("index.js", function () {
       ]);
     });
   });
+
+  describe("calculateFareCrossedStations()", function () {
+    it("is a function", function () {
+      expect(calculateFareCrossedStations).to.be.a("function");
+    });
+  });
 });
